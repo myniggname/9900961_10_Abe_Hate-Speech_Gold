@@ -1,0 +1,22 @@
+tags:
+  - name: UPLOAD FILE (.csv), LALU PILIH APA YANG INGIN ANDA LAKUKAN
+post:
+  description: File want to clean
+parameters:
+  - in: formData
+    name: file
+    type: file
+    required: True
+    description: File yang mau dibersihkan
+  - in: formData
+    name: directory_path
+    type: string
+    required: False
+    description: Masukkan direktori tanpa spasi (" ") untuk mendownload file
+responses:
+    '200':
+      description: Succesful response
+    '400':
+      description: Bad request
+    '500':
+      description: Internal Server Error

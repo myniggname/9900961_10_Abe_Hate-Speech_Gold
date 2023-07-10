@@ -1,0 +1,22 @@
+tags:
+  - name: MASUKAN INDEX YANG INGIN DIBERSIHKAN SECARA OTOMATIS
+get:
+  description: File yang ingin dibersihkan
+parameters:
+  - in: formData
+    name: index
+    type: integer
+    required: True
+    description: Masukkan index dari kolom tweet yang ingin kamu bersihkan,  Pilih Indeks Ke 0 - 13168
+  - in: formData
+    name: note
+    type: string
+    required: False
+    description: Deskripsi.
+responses:
+    '200':
+      description: Succesful response
+    '400':
+      description: Bad request
+    '500':
+      description: Internal Server Error

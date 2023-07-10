@@ -1,0 +1,22 @@
+tags:
+  - name: TEXT CLEANSING
+get:
+  description: File want to clean
+parameters:
+  - in: text
+    name: text
+    type: string
+    required: True
+    description: Text yang ingin dibersihkan
+  - in: formData
+    name: note
+    type: string
+    required: False
+    description: Deskripsi
+responses:
+    '200':
+      description: Succesful response
+    '400':
+      description: Bad request
+    '500':
+      description: Internal Server Error
